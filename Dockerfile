@@ -6,7 +6,7 @@ COPY ./bin /usr/local/bin
 
 RUN apk add --no-cache bash openvpn git openssl iptables && \
 # Get easy-rsa
-    git clone -b v3.0.6 --depth 1 https://github.com/OpenVPN/easy-rsa.git /tmp/easy-rsa && \
+    git clone -b v3.1.2 --depth 1 https://github.com/OpenVPN/easy-rsa.git /tmp/easy-rsa && \
     cd && \
 # Cleanup
     apk del git && \
